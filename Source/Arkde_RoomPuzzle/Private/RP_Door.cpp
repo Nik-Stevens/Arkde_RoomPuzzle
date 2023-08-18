@@ -11,7 +11,7 @@ ARP_Door::ARP_Door()
 	PrimaryActorTick.bCanEverTick = true;
 
 	CustomRootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("CustomRoot"));
-	RootComponent = CustomRootComponent;
+	CustomRootComponent = RootComponent;
 
 	DoorFrameComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("DoorFrame"));
 	DoorFrameComponent->SetupAttachment(CustomRootComponent);
